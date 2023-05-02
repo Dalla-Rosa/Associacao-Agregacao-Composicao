@@ -1,5 +1,6 @@
 package produto;
 
+
 public class Pedido {
     private itemPedido itens[];
     private double valorTotal;
@@ -11,8 +12,8 @@ public class Pedido {
         index = 0;
     }
     
-    public void adicionarItem(itemPedido itens){
-        valorTotal += item.getValor() * getQuantidade();
+    public void adicionarItem(itemPedido item){
+        valorTotal += item.getValor();
         itens[index++] = item;
         
     }
