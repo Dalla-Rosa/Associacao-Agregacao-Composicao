@@ -17,16 +17,20 @@ public class itemPedido {
         this.qtde = qtde;
     }
     
-    public int getProduto(){
+    public Produto getProduto(){
         return produto;
     }
     
-    public void setProduto(int produto){
+    public void setProduto(Produto produto){
+        this.produto = produto;
+    }
+    
+    public double getValor(){
+        return produto.getValor() * qtde;
         
     }
 }
 
     
-
 
 
