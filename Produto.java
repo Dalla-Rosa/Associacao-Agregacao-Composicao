@@ -1,7 +1,14 @@
-package com.mycompany.pedido;
+package produto;
 
 public class Produto {
-    public int codigo;
-    public double valor;
-    public String descricao;
+    private int codigo;
+    private double valor;
+    public String desc;
+
+    public Produto(int codigo, double valor, String desc){
+        this.codigo = codigo;
+        this.valor = valor;
+        this.desc = desc;
+    }
 }
+
