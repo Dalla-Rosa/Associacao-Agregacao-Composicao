@@ -1,49 +1,19 @@
-package com.mycompany.pedido;
-import java.util.Scanner;
-
+package produto;
 
 public class Pedido {
-public int itemPedido;
-public double valorTotal;
-        
-
-
-public void adicionarItem(itemPedido it){
+    private itemPedido itens[];
+    private double valorTotal;
+    private int index;
     
-
-
-}
-
-public void obterTotal(){
-
-
-
-
-}
-
-    public int getItemPedido() {
-        return itemPedido;
+    public Pedido(){
+        itens = new itemPedido[30];
+        valorTotal = 0;
+        index = 0;
     }
-
-    public void setItemPedido(int itemPedido) {
-        this.itemPedido = itemPedido;
-    }
-
-    public double getValorTotal() {
-        return valorTotal;
-    }
-
-    public void setValorTotal(double valorTotal) {
-        this.valorTotal = valorTotal;
-    }
-
     
-    
-    public static void main(String[] args) {
-        
-        Scanner sc = new Scanner(System.in);
-        
+    public void adicionarItem(itemPedido itens){
+        valorTotal += item.getValor() * getQuantidade();
+        itens[index++] = item;
         
     }
-
 }
